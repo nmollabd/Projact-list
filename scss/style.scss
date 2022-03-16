@@ -72,6 +72,19 @@ section {
     }
 }
 
+.heading {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+
+    span {
+        color: #0984e3;
+    }
+}
+
 /********************************
         HEADER STYLE
 *********************************/
@@ -478,18 +491,6 @@ section {
 .faq {
     background: #eee;
 
-    .heading {
-        font-size: 25px;
-        line-height: 35px;
-        margin-bottom: 30px;
-        font-weight: 600;
-        text-align: center;
-
-        span {
-            color: #0984e3;
-        }
-    }
-
     .accordion-container {
         max-width: 700px;
         margin: 0 auto;
@@ -563,6 +564,273 @@ section {
             color: var(--light-color);
             text-transform: capitalize;
             animation: fadeIn .2s linear;
+        }
+    }
+}
+/********************************
+        REVIEW STYLE
+*********************************/
+
+.review {
+    background: #eee;
+    .box-container {
+        padding: 40px 0 40px;
+
+        .slide {
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            border: var(--border);
+            box-shadow: var(--box-shadow);
+            background: white;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 500px;
+                margin-bottom: 50px;
+            }
+    
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                color: var(--black);
+                margin-bottom: 10px;
+            }
+    
+            span {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+                color: var(--blue);
+            }
+    
+            p {
+                font-size: 13px;
+                color: #165381;
+                font-weight: 300;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+/********************************
+        PRODACT CATEGORY STYLE
+*********************************/
+
+.category {
+    background: #eee;
+
+
+    .box-container {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+        .box {
+            text-align: center;
+            border-radius: 5px;
+            border: var(--border);
+            padding: 20px;
+            background: #fff;
+            box-shadow: var(--box-shadow);
+
+            &:hover {
+                background: var(--black);
+
+                h3 {
+                    color: #fff;
+                }
+            }
+
+            img {
+                height: 80px;
+                margin-bottom: 5px;
+            }
+
+            h3 {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 25px;
+                color: var(--black);
+            }
+        }
+    }
+}
+/********************************
+        PRODACT STYLE
+*********************************/
+
+.products {
+    background: #eee;
+
+
+    .box-container {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+        .box {
+            text-align: center;
+            background: #fff;
+            border-radius: 5px;
+            border: var(--black);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+
+            &:hover {
+
+                .image {
+
+                    .hover-img {
+                        display: inline-block;
+                    }
+
+                    .main-img {
+                        display: none;
+                    }
+
+                    .icons {
+                        left: 10px;
+                    }
+                }
+            }
+
+            .image {
+                position: relative;
+
+                img {
+                    height: 300px;
+                    animation: fadeIn .2s linear;
+                }
+
+
+                .hover-img {
+                    display: none;
+                }
+
+                .icons {
+                    position: absolute;
+                    top: 20px;
+                    left: -70px;
+
+                    a {
+                        display: block;
+                        margin-bottom: 10px;
+                        width: 45px;
+                        height: 45px;
+                        line-height: 45px;
+                        font-size: 17px;
+                        border-radius: 500px;
+                        color: #0984e3;
+                        background: var(--black);
+
+                        &:hover {
+                            color: #fff;
+                            background: var(--blue);
+                            transform: rotate(350deg);
+                        }
+                    }
+                }
+            }
+
+            .content {
+                padding: 20px;
+                background: var(--light-bg);
+
+                h3 {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    color: var(--black);
+                    margin-bottom: 10px;
+                }
+
+                .price {
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    color: var(--black);
+                    margin-bottom: 10px;
+
+                    span {
+                        color: #ff0000;
+                        font-weight: 300;
+                        text-decoration: line-through;
+                    }
+                }
+
+                .stars {
+
+                    i {
+                        color: #ffd700;
+                        font-size: 17px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+/********************************
+        PRODACT BANNER STYLE
+*********************************/
+
+.product-banner {
+
+    .box-container {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .box {
+            flex: 1 1 420px;
+            position: relative;
+            box-shadow: var(--box-shadow);
+            border-radius: 5px;
+            border: var(--border);
+            overflow: hidden;
+            height: 300px;
+
+            &:hover {
+
+                img {
+                    transform: scale(1.1);
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                transform: translatey(-50%);
+
+                span {
+                    font-size: 17px;
+                    margin-top: 5px;
+                    font-weight: 500;
+                    color: #0984e3;
+                    line-height: 25px;
+                }
+
+                h3 {
+                    color: #333;
+                    font-size: 20px;
+                    padding-top: 5px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    margin-bottom: 5px;
+                }
+            }
         }
     }
 }
