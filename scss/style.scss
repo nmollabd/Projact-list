@@ -96,7 +96,7 @@ section {
     right: 0;
     z-index: 1000;
     display: flex;
-    padding: 10px 9%;
+    padding: 30px 9%;
     position: sticky;
     align-items: center;
     background: var(--blue);
@@ -364,9 +364,9 @@ section {
         
         .box {
             display: flex;
-            padding: 20px;
             border-radius: 5px;
             align-items: center;
+            padding: 15px 0 15px;
             border: var(--border);
             background: var(--white);
             transition: all 0.3s ease;
@@ -804,7 +804,7 @@ section {
 
             img {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 object-fit: cover;
             }
 
@@ -834,7 +834,487 @@ section {
         }
     }
 }
+/********************************
+        CONTACT INFO STYLE
+*********************************/
 
+.contact {
+    background: #eee;
+
+    .box-container {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+        .box {
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: var(--box-shadow);
+
+            i {
+                width: 75px;
+                height: 75px;
+                color: #fff;
+                font-size: 25px;
+                line-height: 75px;
+                margin-bottom: 5px;
+                border-radius: 500px;
+                background: #0984e3;
+                transition: all .3s ease;
+
+                &:hover {
+                    color: #ffff00;
+                    transform: rotate(360deg);
+                }
+
+            }
+
+            h3 {
+                color: #333;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                margin-bottom: 5px;
+            }
+
+            .title {
+                font-size: 20px;
+                font-weight: 600;
+                color: #0984e3;
+                line-height: 20px;
+                
+                strong {
+                    color: #ff0000;
+                }
+            }
+
+            p {
+                margin: 8px;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 20px;
+                text-transform: lowercase;
+
+                span {
+                    color: #ffd700;
+                    font-weight: 600;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                strong {
+                    color: #ff00f2;
+                }
+            }
+        }
+    }
+}
+
+/********************************
+        CONTACT FROM STYLE
+*********************************/
+
+.contact-from {
+    background: #eee;
+
+   .box-container {
+       gap: 20px;
+       display: flex;
+       flex-wrap: wrap;
+       padding: 50px 0 50px;
+
+        form {
+            flex: 1 1 420px;
+            background: #0984e3;
+            padding: 30px 50px 30px;
+
+            h3 {
+                color: #fff;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 45px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #fff;
+                padding: 10px 0;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            .inputBox {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                input {
+                    width: 49%;
+                }
+            }
+
+            .inputBox ,input,textarea {
+                padding: 12px 14px;
+                border-radius: 5px;
+                box-shadow: var(--box-shadow);
+                background: #fff;
+                text-transform: none;
+                color: var(--light-color);
+                font-size: 17px;
+                line-height: 25px;
+                margin: 7px 0;
+            }
+
+            textarea {
+                height: 150px;
+                resize: none;
+                width: 100%;
+            }
+
+            .btn {
+                
+                &:hover {
+                    color: #fff;
+                    background: #666;
+                }
+            }
+        }
+
+        .map {
+            flex: 1 1 420px;
+            width: 100%;
+        }
+    }
+}
+
+/********************************
+        NEWS LETTER STYLE
+*********************************/
+
+.newsletter {
+    background: #0984e3;
+
+    .box-container {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 50px 0 50px;
+        
+        .content {
+            flex: 1 1 420px;
+            
+            h3 {
+                color: #fff;
+                font-size: 60px;
+                font-weight: 600;
+                line-height: 80px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            
+            p {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 30px;
+            }
+        }
+        
+        form {
+            padding: 5px;
+            display: flex;
+            flex: 1 1 420px;
+            background: #fff;
+            border-radius: 5px;
+            
+            .email {
+                width: 100%;
+                padding: 0 14px;
+                font-size: 15px;
+                line-height: 25px;
+                text-transform: none;
+                color: var(--light-color);
+            }
+            
+            .btn {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+/********************************
+        LOGIN FORM STYLE
+*********************************/
+
+.login {
+
+    form {
+        width: 650px;
+        border-radius: 5px;
+        padding: 30px 30px;
+        background: #fff;
+        margin: 10px auto;
+        box-shadow: var(--box-shadow);
+
+        h3 {
+            font-size: 25px;
+            line-height: 35px;
+            padding-bottom: 10px;
+            color: #333;
+            text-align: center;
+        }
+
+        .box {
+            width: 100%;
+            margin: 7px 0;
+            font-size: 15px;
+            color: #0984e3;
+            line-height: 20px;
+            padding: 12px 14px;
+            border-radius: 5px;
+            text-transform: none;
+            box-shadow: var(--box-shadow);
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 0;
+
+            label {
+                font-size: 15px;
+                line-height: 22px;
+                color: var(--light-color);
+                cursor: pointer;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            text-align: center;
+
+            &.link {
+                background: var(--black);
+
+                &:hover {
+                    color: #fff;
+                    background: #0984e3;
+                }
+            }
+        }
+
+        p {
+            color: #666;
+            font-size: 15px;
+            padding-top: 20px;
+            line-height: 22px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+/********************************
+        REGESTAR FORM STYLE
+*********************************/
+.register {
+
+    form {
+        width: 550px;
+        margin: 10px auto;
+        border-radius: 5px;
+        padding: 30px 30px;
+        background: #fff;
+        box-shadow: var(--box-shadow);
+
+        h3 {
+            font-size: 25px;
+            line-height: 35px;
+            padding-bottom: 10px;
+            color: #333;
+        }
+
+        .box {
+            width: 100%;
+            margin: 7px 0;
+            font-size: 15px;
+            line-height: 20px;
+            padding: 12px 14px;
+            border-radius: 5px;
+            text-transform: none;
+            color: var(--light-bg);
+            box-shadow: var(--box-shadow);
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 0;
+
+            label {
+                font-size: 15px;
+                line-height: 22px;
+                color: var(--light-color);
+                cursor: pointer;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            text-align: center;
+
+            &.link {
+                background: var(--black);
+
+                &:hover {
+                    color: #fff;
+                    background: #0984e3;
+                }
+            }
+        }
+
+        p {
+            color: #666;
+            font-size: 15px;
+            padding-top: 20px;
+            line-height: 22px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+/********************************
+        CART STYLE
+*********************************/
+
+.shopping-cart {
+    background: #eee;
+
+    .box-container {
+        gap: 20px;
+        display: grid;
+        padding: 50px 0 50px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+        .box {
+            gap: 5px;
+            padding: 20px;
+            display: flex;
+            background: #fff;
+            border-radius: 5px;
+            position: relative;
+            align-items: center;
+            border: var(--border);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .fa-times {
+                top: 10px;
+                right: 15px;
+                font-size: 20px;
+                cursor: pointer;
+                line-height: 30px;
+                position: absolute;
+                color: var(--light-color);
+
+                &:hover {
+                    color: #333;
+                    transform: rotate(90deg);
+                }
+            }
+
+            img {
+                height: 120px;
+            }
+
+            .content {
+
+                h3 {
+                    color: #333;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+
+                form {
+                    gap: 5px;
+                    display: flex;
+                    padding: 10px 0;
+                    align-items: center;
+
+                    span {
+                        font-size: 15px;
+                        line-height: 20px;
+                        font-weight: 600;
+                        color: #165381;
+                    }
+
+                    input {
+                        width: 70px;
+                        padding: 5px 15px;
+                        color: #fff;
+                        border-radius: 5px;
+                        background: #666;
+                        font-size: 15px;
+                    }
+                }
+
+                .price {
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #0984e3;
+
+                    span {
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #d15f5f;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+    .cart-total {
+        padding: 20px;
+        margin-top: 20px;
+        padding-top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        background: #fff;;
+        box-shadow: var(--box-shadow);
+
+        h3 {
+            color: #333;
+            font-size: 20px;
+            line-height: 30px;
+            padding-top: 10px;
+
+            span {
+                color: #0984e3;
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 25px;
+            padding: 8px 15px;
+        }
+    }
+}
 
 /********************************
         FOOTER STYLE

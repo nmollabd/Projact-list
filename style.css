@@ -95,7 +95,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 9%;
+  padding: 30px 9%;
   position: sticky;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -339,11 +339,11 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px;
   border-radius: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px 0 15px;
   border: var(--border);
   background: var(--white);
   -webkit-transition: all 0.3s ease;
@@ -721,7 +721,7 @@ section {
 }
 .product-banner .box-container .box img {
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -746,6 +746,462 @@ section {
   font-weight: 600;
   line-height: 30px;
   margin-bottom: 5px;
+}
+
+/********************************
+        CONTACT INFO STYLE
+*********************************/
+.contact {
+  background: #eee;
+}
+.contact .box-container {
+  gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.contact .box-container .box {
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.contact .box-container .box i {
+  width: 75px;
+  height: 75px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 75px;
+  margin-bottom: 5px;
+  border-radius: 500px;
+  background: #0984e3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact .box-container .box i:hover {
+  color: #ffff00;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.contact .box-container .box h3 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.contact .box-container .box .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0984e3;
+  line-height: 20px;
+}
+.contact .box-container .box .title strong {
+  color: #ff0000;
+}
+.contact .box-container .box p {
+  margin: 8px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: lowercase;
+}
+.contact .box-container .box p span {
+  color: #ffd700;
+  font-weight: 600;
+}
+.contact .box-container .box p:last-child {
+  margin-bottom: 0;
+}
+.contact .box-container .box p strong {
+  color: #ff00f2;
+}
+
+/********************************
+        CONTACT FROM STYLE
+*********************************/
+.contact-from {
+  background: #eee;
+}
+.contact-from .box-container {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0 50px;
+}
+.contact-from .box-container form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 420px;
+          flex: 1 1 420px;
+  background: #0984e3;
+  padding: 30px 50px 30px;
+}
+.contact-from .box-container form h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.contact-from .box-container form p {
+  color: #fff;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.contact-from .box-container form .inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contact-from .box-container form .inputBox input {
+  width: 49%;
+}
+.contact-from .box-container form .inputBox, .contact-from .box-container form input, .contact-from .box-container form textarea {
+  padding: 12px 14px;
+  border-radius: 5px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  background: #fff;
+  text-transform: none;
+  color: var(--light-color);
+  font-size: 17px;
+  line-height: 25px;
+  margin: 7px 0;
+}
+.contact-from .box-container form textarea {
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+.contact-from .box-container form .btn:hover {
+  color: #fff;
+  background: #666;
+}
+.contact-from .box-container .map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 420px;
+          flex: 1 1 420px;
+  width: 100%;
+}
+
+/********************************
+        NEWS LETTER STYLE
+*********************************/
+.newsletter {
+  background: #0984e3;
+}
+.newsletter .box-container {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0 50px;
+}
+.newsletter .box-container .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 420px;
+          flex: 1 1 420px;
+}
+.newsletter .box-container .content h3 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.newsletter .box-container .content p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.newsletter .box-container form {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 420px;
+          flex: 1 1 420px;
+  background: #fff;
+  border-radius: 5px;
+}
+.newsletter .box-container form .email {
+  width: 100%;
+  padding: 0 14px;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: none;
+  color: var(--light-color);
+}
+.newsletter .box-container form .btn {
+  margin-top: 0;
+}
+
+/********************************
+        LOGIN FORM STYLE
+*********************************/
+.login form {
+  width: 650px;
+  border-radius: 5px;
+  padding: 30px 30px;
+  background: #fff;
+  margin: 10px auto;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.login form h3 {
+  font-size: 25px;
+  line-height: 35px;
+  padding-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+.login form .box {
+  width: 100%;
+  margin: 7px 0;
+  font-size: 15px;
+  color: #0984e3;
+  line-height: 20px;
+  padding: 12px 14px;
+  border-radius: 5px;
+  text-transform: none;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.login form .remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding: 10px 0;
+}
+.login form .remember label {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--light-color);
+  cursor: pointer;
+}
+.login form .btn {
+  width: 100%;
+  text-align: center;
+}
+.login form .btn.link {
+  background: var(--black);
+}
+.login form .btn.link:hover {
+  color: #fff;
+  background: #0984e3;
+}
+.login form p {
+  color: #666;
+  font-size: 15px;
+  padding-top: 20px;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+
+/********************************
+        REGESTAR FORM STYLE
+*********************************/
+.register form {
+  width: 550px;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 30px 30px;
+  background: #fff;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.register form h3 {
+  font-size: 25px;
+  line-height: 35px;
+  padding-bottom: 10px;
+  color: #333;
+}
+.register form .box {
+  width: 100%;
+  margin: 7px 0;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 12px 14px;
+  border-radius: 5px;
+  text-transform: none;
+  color: var(--light-bg);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.register form .remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding: 10px 0;
+}
+.register form .remember label {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--light-color);
+  cursor: pointer;
+}
+.register form .btn {
+  width: 100%;
+  text-align: center;
+}
+.register form .btn.link {
+  background: var(--black);
+}
+.register form .btn.link:hover {
+  color: #fff;
+  background: #0984e3;
+}
+.register form p {
+  color: #666;
+  font-size: 15px;
+  padding-top: 20px;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+
+/********************************
+        CART STYLE
+*********************************/
+.shopping-cart {
+  background: #eee;
+}
+.shopping-cart .box-container {
+  gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  padding: 50px 0 50px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.shopping-cart .box-container .box {
+  gap: 5px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: var(--border);
+}
+.shopping-cart .box-container .box:last-child {
+  margin-bottom: 0;
+}
+.shopping-cart .box-container .box .fa-times {
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 30px;
+  position: absolute;
+  color: var(--light-color);
+}
+.shopping-cart .box-container .box .fa-times:hover {
+  color: #333;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.shopping-cart .box-container .box img {
+  height: 120px;
+}
+.shopping-cart .box-container .box .content h3 {
+  color: #333;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+.shopping-cart .box-container .box .content form {
+  gap: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shopping-cart .box-container .box .content form span {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #165381;
+}
+.shopping-cart .box-container .box .content form input {
+  width: 70px;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  background: #666;
+  font-size: 15px;
+}
+.shopping-cart .box-container .box .content .price {
+  font-size: 20px;
+  line-height: 30px;
+  color: #0984e3;
+}
+.shopping-cart .box-container .box .content .price span {
+  font-size: 15px;
+  line-height: 22px;
+  color: #d15f5f;
+  text-decoration: line-through;
+}
+.shopping-cart .cart-total {
+  padding: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background: #fff;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.shopping-cart .cart-total h3 {
+  color: #333;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+.shopping-cart .cart-total h3 span {
+  color: #0984e3;
+}
+.shopping-cart .cart-total .btn {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 8px 15px;
 }
 
 /********************************
